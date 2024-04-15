@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    background: linear-gradient(to bottom,
+    #8A7AFF, #E672E0, #FF7BBA,
+    #FF9799, #FFBB88, #FFDF8F,
+    #FFFFAD);
+}
+.window {
+    width: 100%;
+    max-width: 764px;
+    height: 90%;
+    min-height: 568px;
+    position: relative;
+    border: 2px solid #420042;
+    margin: 0 auto;
+}
+.chat-header {
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to bottom, #420042, #1f001f);
+}
+.chat-header h2 {
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: white;
+}
+.screen-wraper {
+    width: 100%;
+    height: 75%;
+    border-bottom: 1px solid #999;
+}
+.screen {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow-y: auto;
+    padding: 3px;
+}
+.entrada-msg {
+    width: 100%;
+}
+.entrada-msg:not(:first-of-type) {
+    margin-top: 2px;
+}
+.screen h4 {
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+}
+.screen span {
+    font-size: 16px;
+}
+.aviso {
+    font-size: 16px;
+    color: red;
+    margin: 3px 0;
+}
+.message-box {
+    width: 100%;
+    height: 10%;
+    background-color: #ccc;
+}
+.message-box input {
+    border: 1px solid #777;
+}
+.message-box input:hover {
+    border: 1px solid #555;
+}
+.message-box input:focus {
+    outline: 0;
+    border: 1px solid rgb(0, 134, 175);
+}
+.message {
+    width: 100%;
+    height: 45%;
+}
+.message input {
+    width: 100%;
+    height: 100%;
+    padding-left: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.nickname {
+    float: left;
+    height: 45%;
+}
+.nickname h3 {
+    float: left;
+    margin-inline: 10px;
+    position: relative;
+    top: 55%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-weight: normal;
+}
+.nickname input {
+    width: calc(100% - 58px - 103px);
+    height: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    top: 10%;
+    padding-left: 8px;
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nickname button {
+    margin-left: 5px;
+    margin-top: 0.9%;
+    padding: 3px;
+    cursor: pointer;
+}
+.cores {
+    width: 100%;
+    height: 5%;
+    background-color: #ccc;
+    padding: 5px;
+}
+.cores input {
+    float: left;
+    height: 4%;
+    min-height: 30px;
+    width: 50px;
+    position: absolute;
+    bottom: 0.5%;
+}
+.emojis {
+    float: right;
+    background-image: url(../icons-solid.svg);
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.emoji-window {
+    position: absolute;
+    bottom: 5%;
+    right: 5px;
+    max-width: 25%;
+    max-height: 40%;
+    min-width: 160px;
+    min-height: 200px;
+    background-color: #eee;
+    border: 1px solid #555;
+    overflow: auto;
+    display: none;
+}
+.emoji-window span {
+    cursor: pointer;
+    width: calc(100% / 6);
+    height: 23.5px;
+    float: left;
+    text-align: center;
+}
